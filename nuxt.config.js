@@ -1,12 +1,14 @@
 require('dotenv').config();
 
 export default {
+  target: 'static',
   mode: 'universal',
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000',
   },
   router: {
     middleware: 'fetch',
+    base: '/https://github.com/AndreyVolkov88/rak-lechitsa.git/',
   },
   pageTransition: 'transition-page',
   head: {
